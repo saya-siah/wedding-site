@@ -1,0 +1,37 @@
+body {
+    background-color: #E8E2D6; /* Sandstone Beige */
+    color: #5D4A3E;           /* Forest Brown */
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.river-container {
+    padding: 40px;
+    border-top: 8px solid #4A6274; /* Deep River Blue accent */
+}
+
+h1 {
+    color: #4A6274; /* Muted Blue */
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.pebble-button {
+    background-color: #4A6274;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px; /* Stone shape */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pebble-button:hover {
+    background-color: #5D4A3E; /* Shifts to brown on hover */
+}
