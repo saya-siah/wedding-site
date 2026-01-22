@@ -1,87 +1,108 @@
-/* Import elegant Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap');
-
 :root {
-    --deep-navy: #2A3D63;      /* Your Highlight */
-    --alabaster: #FEFAF6;      /* Your Background */
-    --forest-brown: #5D4A3E;   /* Keeping this for soft secondary text */
+    --navy: #2A3D63;
+    --alabaster: #FEFAF6;
 }
 
 body {
     background-color: var(--alabaster);
-    color: var(--deep-navy);
+    color: var(--navy);
     font-family: 'Cormorant Garamond', serif;
     margin: 0;
-    line-height: 1.6;
+    padding: 60px 20px;
     display: flex;
     justify-content: center;
-    padding: 80px 20px;
+    min-height: 100vh;
 }
 
-.river-container {
-    max-width: 700px;
+.main-container {
+    max-width: 750px;
     width: 100%;
-    border: 1px solid rgba(42, 61, 99, 0.2);
-    padding: 60px;
-    background-color: var(--alabaster);
-    /* Subtle shadow for a "stationery" feel */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    text-align: center;
+    border: 1px solid rgba(42, 61, 99, 0.15); /* Subtle frame */
+    padding: 80px 40px;
 }
 
-header h1 {
+h1 {
     font-family: 'Cinzel', serif;
-    color: var(--deep-navy);
-    font-size: 3.2rem;
-    text-transform: uppercase;
-    letter-spacing: 8px; /* This creates the "long" classy look */
-    margin-bottom: 10px;
+    font-size: 3.5rem;
     font-weight: 400;
+    letter-spacing: 10px; /* The "long" elegant look */
+    text-transform: uppercase;
+    margin: 20px 0;
 }
 
-.subtitle {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: 1.4rem;
-    letter-spacing: 2px;
-    margin-top: 0;
+.top-date {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 6px;
+    font-size: 0.8rem;
     opacity: 0.8;
 }
 
-.event-details h3 {
+.subtitle {
+    font-style: italic;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.divider {
+    height: 1px;
+    width: 100px;
+    background-color: var(--navy);
+    margin: 40px auto;
+    opacity: 0.3;
+}
+
+.venue-block {
+    margin-bottom: 50px;
+}
+
+h3 {
     font-family: 'Cinzel', serif;
-    font-size: 1.2rem;
+    text-transform: uppercase;
     letter-spacing: 4px;
-    border-bottom: 1px solid var(--deep-navy);
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-top: 40px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
 }
 
 .venue-name {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
-    margin-top: 15px;
-    display: block;
 }
 
-.pebble-button {
+.address {
+    font-size: 1rem;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+
+.rsvp-link {
+    text-decoration: none;
+}
+
+.elegant-button {
     background-color: transparent;
-    color: var(--deep-navy);
-    border: 1.5px solid var(--deep-navy);
-    padding: 15px 50px;
-    border-radius: 0; /* Square edges feel more "High Fashion" / Fair Lady */
+    color: var(--navy);
+    border: 1px solid var(--navy);
+    padding: 18px 45px;
     font-family: 'Cinzel', serif;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
     letter-spacing: 3px;
     cursor: pointer;
-    transition: all 0.4s ease;
-    margin-top: 50px;
-    text-transform: uppercase;
+    transition: all 0.5s ease;
+    margin-top: 20px;
 }
 
-.pebble-button:hover {
-    background-color: var(--deep-navy);
+.elegant-button:hover {
+    background-color: var(--navy);
     color: var(--alabaster);
-    letter-spacing: 5px; /* The button "stretches" slightly when hovered */
-    transition: 0.5s ease;
+    letter-spacing: 5px; /* Subtle stretch effect */
+}
+
+.hashtag {
+    margin-top: 60px;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    opacity: 0.5;
 }
