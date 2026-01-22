@@ -1,37 +1,101 @@
+:root {
+    --river-blue: #4A6274;
+    --forest-brown: #5D4A3E;
+    --sandstone-beige: #E8E2D6;
+    --mist-blue: #D1D9E0;
+}
+
 body {
-    background-color: #E8E2D6; /* Sandstone Beige */
-    color: #5D4A3E;           /* Forest Brown */
-    font-family: 'Georgia', serif;
+    background-color: var(--sandstone-beige);
+    color: var(--forest-brown);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    text-align: center;
+    padding: 50px 20px;
 }
 
 .river-container {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Glass effect on beige */
     padding: 40px;
-    border-top: 8px solid #4A6274; /* Deep River Blue accent */
+    border: 1px solid var(--mist-blue);
+    border-radius: 4px;
+    text-align: center;
 }
 
 h1 {
-    color: #4A6274; /* Muted Blue */
-    font-size: 3rem;
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--river-blue);
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+.date-top {
+    letter-spacing: 4px;
+    font-size: 0.9rem;
+    color: var(--forest-brown);
+    margin-bottom: 20px;
+}
+
+.motif-divider {
+    height: 2px;
+    width: 60px;
+    background: var(--river-blue);
+    margin: 30px auto;
+}
+
+.event-card {
+    margin: 40px 0;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--river-blue);
+    font-size: 1.8rem;
+    text-transform: uppercase;
     letter-spacing: 2px;
 }
 
+.time {
+    font-weight: bold;
+    color: var(--forest-brown);
+}
+
+.venue {
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.address {
+    font-size: 0.85rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
 .pebble-button {
-    background-color: #4A6274;
+    background-color: var(--river-blue);
     color: white;
     border: none;
-    padding: 15px 40px;
-    border-radius: 50px; /* Stone shape */
-    font-size: 1rem;
+    padding: 18px 50px;
+    border-radius: 40px; /* Smooth like a river stone */
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.4s ease;
+    margin-top: 30px;
 }
 
 .pebble-button:hover {
-    background-color: #5D4A3E; /* Shifts to brown on hover */
+    background-color: var(--forest-brown);
+    transform: translateY(-2px);
+}
+
+.hashtag {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: var(--river-blue);
 }
