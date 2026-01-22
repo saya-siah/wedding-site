@@ -1,101 +1,85 @@
+/* Import elegant Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap');
+
 :root {
-    --river-blue: #4A6274;
-    --forest-brown: #5D4A3E;
-    --sandstone-beige: #E8E2D6;
-    --mist-blue: #D1D9E0;
+    --deep-navy: #2A3D63;      /* Your Highlight */
+    --alabaster: #FEFAF6;      /* Your Background */
+    --forest-brown: #5D4A3E;   /* Keeping this for soft secondary text */
 }
 
 body {
-    background-color: var(--sandstone-beige);
-    color: var(--forest-brown);
-    font-family: 'Montserrat', sans-serif;
+    background-color: var(--alabaster);
+    color: var(--deep-navy);
+    font-family: 'Cormorant Garamond', serif;
     margin: 0;
+    line-height: 1.6;
     display: flex;
     justify-content: center;
-    padding: 50px 20px;
+    padding: 80px 20px;
 }
 
 .river-container {
-    max-width: 600px;
+    max-width: 700px;
     width: 100%;
-    background: rgba(255, 255, 255, 0.3); /* Glass effect on beige */
-    padding: 40px;
-    border: 1px solid var(--mist-blue);
-    border-radius: 4px;
-    text-align: center;
+    border: 1px solid rgba(42, 61, 99, 0.2);
+    padding: 60px;
+    background-color: var(--alabaster);
+    /* Subtle shadow for a "stationery" feel */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
 }
 
-h1 {
-    font-family: 'Cormorant Garamond', serif;
-    color: var(--river-blue);
-    font-size: 3.5rem;
-    margin-bottom: 0;
-    font-weight: 300;
-}
-
-.date-top {
-    letter-spacing: 4px;
-    font-size: 0.9rem;
-    color: var(--forest-brown);
-    margin-bottom: 20px;
-}
-
-.motif-divider {
-    height: 2px;
-    width: 60px;
-    background: var(--river-blue);
-    margin: 30px auto;
-}
-
-.event-card {
-    margin: 40px 0;
-}
-
-h3 {
-    font-family: 'Cormorant Garamond', serif;
-    color: var(--river-blue);
-    font-size: 1.8rem;
+header h1 {
+    font-family: 'Cinzel', serif;
+    color: var(--deep-navy);
+    font-size: 3.2rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 8px; /* This creates the "long" classy look */
+    margin-bottom: 10px;
+    font-weight: 400;
 }
 
-.time {
-    font-weight: bold;
-    color: var(--forest-brown);
-}
-
-.venue {
-    font-size: 1.1rem;
-    margin-top: 5px;
-}
-
-.address {
-    font-size: 0.85rem;
+.subtitle {
+    font-family: 'Cormorant Garamond', serif;
     font-style: italic;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin-top: 0;
     opacity: 0.8;
 }
 
-.pebble-button {
-    background-color: var(--river-blue);
-    color: white;
-    border: none;
-    padding: 18px 50px;
-    border-radius: 40px; /* Smooth like a river stone */
-    font-family: 'Cormorant Garamond', serif;
+.event-details h3 {
+    font-family: 'Cinzel', serif;
     font-size: 1.2rem;
+    letter-spacing: 4px;
+    border-bottom: 1px solid var(--deep-navy);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+.venue-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 15px;
+    display: block;
+}
+
+.pebble-button {
+    background-color: transparent;
+    color: var(--deep-navy);
+    border: 1.5px solid var(--deep-navy);
+    padding: 15px 50px;
+    border-radius: 0; /* Square edges feel more "High Fashion" / Fair Lady */
+    font-family: 'Cinzel', serif;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
     cursor: pointer;
     transition: all 0.4s ease;
-    margin-top: 30px;
+    margin-top: 50px;
+    text-transform: uppercase;
 }
 
 .pebble-button:hover {
-    background-color: var(--forest-brown);
-    transform: translateY(-2px);
-}
-
-.hashtag {
-    margin-top: 30px;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
-    color: var(--river-blue);
+    background-color: var(--deep-navy);
+    color: var(--alabaster);
 }
